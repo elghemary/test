@@ -137,10 +137,12 @@ img { max-width: 100%; display: block; }
 
 /* Roles ticker */
 .roles-ticker {
+  width: 100vw;       /* span the whole viewport */
+  margin-left: calc(-50vw + 50%);
   position: relative;
   overflow: hidden;
   border: 1px solid var(--border);
-  border-radius: 10px;
+  border-radius: 0px;
   background: #1f1f1f;
   margin: 12px 0 18px;
 }
