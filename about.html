@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>What I Do — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-content">
+        <a href="./index.html" class="logo" aria-label="Home">
+          <span class="logo-mark">●</span>
+          <span class="logo-text">Creator</span>
+        </a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="./index.html">Home</a>
+          <a href="./about.html">What I Do</a>
+          <a href="./projects.html">Showcase</a>
+          <a href="./behind.html">Behind the Scenes</a>
+          <a href="./contact.html">Say Hello</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section about reveal-on-scroll" aria-label="What I Do">
+        <div class="container">
+          <p class="section-kicker">“Many hats, one story.”</p>
+          <h2 class="section-title">What I Do</h2>
+
+          <div class="about-cards">
+            <article class="card role">
+              <h3 class="card-title">Current Role</h3>
+              <p class="card-body">Robotics Educator & Creative Technologist at Example Lab.</p>
+            </article>
+            <article class="card role">
+              <h3 class="card-title">Volunteering</h3>
+              <p class="card-body">Mentor at STEM for All, organizing maker nights and Arduino workshops.</p>
+            </article>
+          </div>
+
+          <div class="traits">
+            <div class="trait-card">
+              <div class="trait-icon" aria-hidden="true">🏃‍♂️</div>
+              <div class="trait-text">Runner</div>
+            </div>
+            <div class="trait-card">
+              <div class="trait-icon" aria-hidden="true">🥾</div>
+              <div class="trait-text">Hiker</div>
+            </div>
+            <div class="trait-card">
+              <div class="trait-icon" aria-hidden="true">🕺</div>
+              <div class="trait-text">Breakdancer</div>
+            </div>
+            <div class="trait-card">
+              <div class="trait-icon" aria-hidden="true">📖</div>
+              <div class="trait-text">Storyteller</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Your Name — Playful craft, serious results.</p>
+      </div>
+    </footer>
+  </body>
+</html>
