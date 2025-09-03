@@ -145,13 +145,12 @@ img { max-width: 100%; display: block; }
   border-radius: 0px;
   background: #1f1f1f;
   margin: 12px 0 18px;
-  padding: 20px 0;
 }
 .roles-ticker .ticker-track {
   display: inline-block;
   white-space: nowrap;
   padding: 10px 0;
-  animation: ticker-scroll 30s linear infinite;
+  animation: ticker-scroll 120s linear infinite;
 }
 .roles-ticker span {
   color: var(--accent);
