@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Showcase | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo" aria-label="Home">
+        <span class="logo-mark">●</span>
+        <span class="logo-text">Creator</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="what-i-do.html">What I Do</a>
+        <a href="showcase.html" class="active">Showcase</a>
+        <a href="behind-scenes.html">Behind the Scenes</a>
+        <a href="contact.html">Say Hello</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section projects" aria-label="Showcase">
+      <div class="container">
+        <h1 class="section-title">Showcase</h1>
+        <div class="filters" role="tablist" aria-label="Project categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="robotics" role="tab">Robotics</button>
+          <button class="filter-btn" data-filter="arduino" role="tab">Arduino</button>
+          <button class="filter-btn" data-filter="teaching" role="tab">Teaching Materials</button>
+          <button class="filter-btn" data-filter="personal" role="tab">Personal</button>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-category="robotics">
+            <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="Robotics project" />
+            <div class="project-overlay">
+              <h3>Line‑Following Bot</h3>
+              <p>PID‑tuned robot for education kits.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="arduino">
+            <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop" alt="Arduino project" />
+            <div class="project-overlay">
+              <h3>Weather Cube</h3>
+              <p>Ambient LED display via Arduino + MQTT.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="teaching">
+            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1200&auto=format&fit=crop" alt="Teaching materials" />
+            <div class="project-overlay">
+              <h3>Lesson Kit</h3>
+              <p>Printable modules for intro electronics.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="personal">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Personal project" />
+            <div class="project-overlay">
+              <h3>Micro‑Stories</h3>
+              <p>Short fiction illustrated by code.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="robotics">
+            <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1200&auto=format&fit=crop" alt="Robotics build" />
+            <div class="project-overlay">
+              <h3>Armature</h3>
+              <p>Low‑cost robotic arm prototype.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="arduino">
+            <img src="https://images.unsplash.com/photo-1451187041486-7c88f046331f?q=80&w=1200&auto=format&fit=crop" alt="Arduino build" />
+            <div class="project-overlay">
+              <h3>Plant Buddy</h3>
+              <p>Soil moisture sensor with playful alerts.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name — Playful craft, serious results.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

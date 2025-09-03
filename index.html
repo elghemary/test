@@ -14,17 +14,17 @@
   <body>
     <header class="site-header">
       <div class="container header-content">
-        <a href="#home" class="logo" aria-label="Home">
+        <a href="index.html" class="logo" aria-label="Home">
           <span class="logo-mark">●</span>
           <span class="logo-text">Creator</span>
         </a>
         <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
         <nav class="site-nav" aria-label="Primary">
-          <a href="#home">Home</a>
-          <a href="#about">What I Do</a>
-          <a href="#projects">Showcase</a>
-          <a href="#behind">Behind the Scenes</a>
-          <a href="#contact">Say Hello</a>
+          <a href="index.html">Home</a>
+          <a href="what-i-do.html">What I Do</a>
+          <a href="showcase.html">Showcase</a>
+          <a href="behind-scenes.html">Behind the Scenes</a>
+          <a href="contact.html">Say Hello</a>
         </nav>
       </div>
     </header>
@@ -33,185 +33,69 @@
       <!-- 1) Home / Hero -->
       <section id="home" class="section hero" aria-label="Home">
         <div class="container hero-inner">
-          <div class="hero-photo-wrap">
-            <img
-              class="hero-photo"
-              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop"
-              alt="Portrait of the creator"
-              width="360"
-              height="360"
-            />
-            <h1 class="hero-name" aria-label="Creator name">
-              <span class="name">YOUR NAME</span>
-            </h1>
+          <div class="hero-left">
+            <div class="hero-photo-wrap">
+              <img
+                class="hero-photo"
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1600&auto=format&fit=crop"
+                alt="Portrait of the creator"
+              />
+              <h1 class="hero-name" aria-label="Creator name">
+                <span class="name">YOUR NAME</span>
+              </h1>
+            </div>
           </div>
-          <p class="hero-tagline">Building playful ideas with serious craft.</p>
-          <div class="hero-cta">
-            <a class="btn btn-accent" href="#projects">Explore Showcase</a>
-            <a class="btn btn-ghost" href="#contact">Say Hello</a>
+          <div class="hero-right">
+            <p class="hero-tagline">Building playful ideas with serious craft.</p>
+            <div class="roles-ticker" aria-label="Personal roles ticker">
+              <div class="ticker-track">
+                <span>RUNNER · HIKER · BREAKDANCER · STORYTELLER · </span>
+                <span>RUNNER · HIKER · BREAKDANCER · STORYTELLER · </span>
+                <span>RUNNER · HIKER · BREAKDANCER · STORYTELLER · </span>
+              </div>
+            </div>
+            <div class="hero-cta">
+              <a class="btn btn-accent" href="showcase.html">Explore</a>
+              <a class="btn btn-ghost" href="contact.html">Say Hello</a>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- 2) What I Do / About -->
-      <section id="about" class="section about reveal-on-scroll" aria-label="What I Do">
+      <!-- About teaser linking to full page -->
+      <section class="section about reveal-on-scroll" aria-label="What I Do">
         <div class="container">
           <p class="section-kicker">“Many hats, one story.”</p>
           <h2 class="section-title">What I Do</h2>
-
-          <div class="about-cards">
-            <article class="card role">
-              <h3 class="card-title">Current Role</h3>
-              <p class="card-body">Robotics Educator & Creative Technologist at Example Lab.</p>
-            </article>
-            <article class="card role">
-              <h3 class="card-title">Volunteering</h3>
-              <p class="card-body">Mentor at STEM for All, organizing maker nights and Arduino workshops.</p>
-            </article>
-          </div>
-
-          <div class="traits">
-            <div class="trait-card">
-              <div class="trait-icon" aria-hidden="true">🏃‍♂️</div>
-              <div class="trait-text">Runner</div>
-            </div>
-            <div class="trait-card">
-              <div class="trait-icon" aria-hidden="true">🥾</div>
-              <div class="trait-text">Hiker</div>
-            </div>
-            <div class="trait-card">
-              <div class="trait-icon" aria-hidden="true">🕺</div>
-              <div class="trait-text">Breakdancer</div>
-            </div>
-            <div class="trait-card">
-              <div class="trait-icon" aria-hidden="true">📖</div>
-              <div class="trait-text">Storyteller</div>
-            </div>
-          </div>
+          <p class="card-body" style="max-width:700px;margin-bottom:16px;color:#cccccc">Explore how I teach robotics, lead workshops, and create playful tech projects.</p>
+          <a class="btn" href="what-i-do.html">Open What I Do</a>
         </div>
       </section>
 
-      <!-- 3) Projects / Showcase -->
-      <section id="projects" class="section projects reveal-on-scroll" aria-label="Showcase">
+      <!-- Showcase teaser linking to full page -->
+      <section class="section projects reveal-on-scroll" aria-label="Showcase">
         <div class="container">
           <h2 class="section-title">Showcase</h2>
-          <div class="filters" role="tablist" aria-label="Project categories">
-            <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
-            <button class="filter-btn" data-filter="robotics" role="tab">Robotics</button>
-            <button class="filter-btn" data-filter="arduino" role="tab">Arduino</button>
-            <button class="filter-btn" data-filter="teaching" role="tab">Teaching Materials</button>
-            <button class="filter-btn" data-filter="personal" role="tab">Personal</button>
-          </div>
-
-          <div class="project-grid">
-            <article class="project-card" data-category="robotics">
-              <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="Robotics project" />
-              <div class="project-overlay">
-                <h3>Line‑Following Bot</h3>
-                <p>PID‑tuned robot for education kits.</p>
-              </div>
-            </article>
-            <article class="project-card" data-category="arduino">
-              <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop" alt="Arduino project" />
-              <div class="project-overlay">
-                <h3>Weather Cube</h3>
-                <p>Ambient LED display via Arduino + MQTT.</p>
-              </div>
-            </article>
-            <article class="project-card" data-category="teaching">
-              <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1200&auto=format&fit=crop" alt="Teaching materials" />
-              <div class="project-overlay">
-                <h3>Lesson Kit</h3>
-                <p>Printable modules for intro electronics.</p>
-              </div>
-            </article>
-            <article class="project-card" data-category="personal">
-              <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Personal project" />
-              <div class="project-overlay">
-                <h3>Micro‑Stories</h3>
-                <p>Short fiction illustrated by code.</p>
-              </div>
-            </article>
-            <article class="project-card" data-category="robotics">
-              <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1200&auto=format&fit=crop" alt="Robotics build" />
-              <div class="project-overlay">
-                <h3>Armature</h3>
-                <p>Low‑cost robotic arm prototype.</p>
-              </div>
-            </article>
-            <article class="project-card" data-category="arduino">
-              <img src="https://images.unsplash.com/photo-1451187041486-7c88f046331f?q=80&w=1200&auto=format&fit=crop" alt="Arduino build" />
-              <div class="project-overlay">
-                <h3>Plant Buddy</h3>
-                <p>Soil moisture sensor with playful alerts.</p>
-              </div>
-            </article>
-          </div>
+          <p style="color:#3a3a3a">Browse selected projects with filters and details.</p>
+          <a class="btn btn-accent" href="showcase.html">Open Showcase</a>
         </div>
       </section>
 
-      <!-- 4) Behind the Scenes -->
-      <section id="behind" class="section behind reveal-on-scroll" aria-label="Behind the Scenes">
+      <!-- Behind teaser linking to full page -->
+      <section class="section behind reveal-on-scroll" aria-label="Behind the Scenes">
         <div class="container">
           <h2 class="section-title">Behind the Scenes</h2>
-          <div class="behind-grid">
-            <figure class="behind-item">
-              <img src="https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?q=80&w=1200&auto=format&fit=crop" alt="Studio desk" />
-              <figcaption>Studio desk, afternoon light</figcaption>
-            </figure>
-            <figure class="behind-item">
-              <img src="https://images.unsplash.com/photo-1520975682031-a4c2b38dc15f?q=80&w=1200&auto=format&fit=crop" alt="Workshop details" />
-              <figcaption>Workshop details</figcaption>
-            </figure>
-            <figure class="behind-item">
-              <img src="https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?q=80&w=1200&auto=format&fit=crop" alt="Weekend hike" />
-              <figcaption>Weekend hike</figcaption>
-            </figure>
-            <figure class="behind-item">
-              <img src="https://images.unsplash.com/photo-1508197149814-0cc02e8b7f74?q=80&w=1200&auto=format&fit=crop" alt="Dance practice" />
-              <figcaption>Dance practice</figcaption>
-            </figure>
-            <figure class="behind-item">
-              <img src="https://images.unsplash.com/photo-1494232410401-ad00d5433cfa?q=80&w=1200&auto=format&fit=crop" alt="Sketchbook" />
-              <figcaption>Sketchbook ideas</figcaption>
-            </figure>
-            <figure class="behind-item">
-              <img src="https://images.unsplash.com/photo-1536890274788-1f7ae568d89b?q=80&w=1200&auto=format&fit=crop" alt="Coffee and code" />
-              <figcaption>Coffee & code</figcaption>
-            </figure>
-          </div>
+          <p style="color:#3a3a3a">A digital sketchbook of explorations and process.</p>
+          <a class="btn" href="behind-scenes.html">Open Behind the Scenes</a>
         </div>
       </section>
 
-      <!-- 5) Contact -->
-      <section id="contact" class="section contact reveal-on-scroll" aria-label="Say Hello">
-        <div class="container contact-inner">
-          <div class="contact-copy">
-            <h2 class="section-title">Say Hello</h2>
-            <p>Have a project in mind or just want to connect? I’d love to hear from you.</p>
-            <ul class="contact-list">
-              <li><a href="mailto:you@example.com">you@example.com</a></li>
-              <li><a href="https://instagram.com/" target="_blank" rel="noreferrer noopener">Instagram</a></li>
-              <li><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer noopener">LinkedIn</a></li>
-              <li><a href="https://github.com/" target="_blank" rel="noreferrer noopener">GitHub</a></li>
-            </ul>
-          </div>
-
-          <form class="contact-form" action="#" method="post">
-            <label>
-              <span>Name</span>
-              <input type="text" name="name" placeholder="Your name" required />
-            </label>
-            <label>
-              <span>Email</span>
-              <input type="email" name="email" placeholder="Your email" required />
-            </label>
-            <label class="full">
-              <span>Message</span>
-              <textarea name="message" rows="5" placeholder="Tell me about your idea" required></textarea>
-            </label>
-            <button type="submit" class="btn btn-accent">Send Message</button>
-          </form>
+      <!-- Contact teaser linking to full page -->
+      <section class="section contact reveal-on-scroll" aria-label="Say Hello">
+        <div class="container">
+          <h2 class="section-title">Say Hello</h2>
+          <p>Have a project in mind or just want to connect? I’d love to hear from you.</p>
+          <a class="btn btn-accent" href="contact.html">Open Contact</a>
         </div>
       </section>
     </main>
