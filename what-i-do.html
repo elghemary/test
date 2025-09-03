@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | What I Do</title>
-    <link rel="stylesheet" href="portfolio-styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -202,32 +202,31 @@
     <div class="cursor-follower"></div>
 
     <!-- Header -->
-    <header>
-        <nav>
-            <div class="logo">Portfolio<span>.</span></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="what-i-do.html" class="active">What I Do</a></li>
-                <li><a href="showcase.html">Showcase</a></li>
-                <li><a href="behind-scenes.html">Behind the Scenes</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
+    <header class="site-header">
+      <div class="container header-content">
+        <a href="index.html" class="logo" aria-label="Home">
+          <span class="logo-mark">●</span>
+          <span class="logo-text">Creator</span>
+        </a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="what-i-do.html" class="active">What I Do</a>
+          <a href="showcase.html">Showcase</a>
+          <a href="behind-scenes.html">Behind the Scenes</a>
+          <a href="contact.html">Say Hello</a>
         </nav>
+      </div>
     </header>
 
     <!-- Page Header -->
-    <div class="page-header">
-        <h1>What I Do</h1>
-        <p>Exploring the intersection of education, technology, and creativity</p>
-        
-        <div class="quote-container">
-            <p class="quote-text">"Technology is not neutral. We're inside of what we make, and it's inside of us."</p>
-            <p class="quote-author">— Donna Haraway (Cyborg Manifesto)</p>
-        </div>
-    </div>
+    <section class="section" aria-label="What I Do">
+      <div class="container">
+        <p class="section-kicker">“Many hats, one story.”</p>
+        <h1 class="section-title">What I Do</h1>
+        <p class="card-body" style="max-width:700px;color:#cccccc">Exploring the intersection of education, technology, and creativity.</p>
+      </div>
+    </section>
 
     <!-- Build & Teach Section -->
     <div class="section-container">
@@ -361,22 +360,12 @@
     </div>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">Portfolio<span>.</span></div>
-            <p>Creating meaningful experiences through design and technology.</p>
-            <div class="footer-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="what-i-do.html">What I Do</a>
-                <a href="behind-scenes.html">Behind the Scenes</a>
-                <a href="contact.html">Contact</a>
-            </div>
-            <p class="copyright">&copy; 2023 Portfolio. All rights reserved.</p>
-        </div>
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Your Name — Playful craft, serious results.</p>
+      </div>
     </footer>
 
-    <script src="portfolio-script.js"></script>
-    <script src="cursor-script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html> 

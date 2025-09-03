@@ -4,29 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Farah's Portfolio</title>
-    <link rel="stylesheet" href="portfolio-styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
-    <header>
-        <nav>
-            <div class="logo">Farah</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="what-i-do.html">What I Do</a></li>
-                <li><a href="showcase.html">Showcase</a></li>
-                <li><a href="behind-scenes.html">Behind the Scenes</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+    <header class="site-header">
+      <div class="container header-content">
+        <a href="index.html" class="logo" aria-label="Home">
+          <span class="logo-mark">●</span>
+          <span class="logo-text">Creator</span>
+        </a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="what-i-do.html">What I Do</a>
+          <a href="showcase.html">Showcase</a>
+          <a href="behind-scenes.html">Behind the Scenes</a>
+          <a href="contact.html" class="active">Say Hello</a>
         </nav>
+      </div>
     </header>
 
     <main>
@@ -70,36 +69,12 @@
         </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Farah</h3>
-                <p>Educator • STEAM Advocate • Impact Creator</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="what-i-do.html">What I Do</a></li>
-                    <li><a href="showcase.html">Showcase</a></li>
-                    <li><a href="behind-scenes.html">Behind the Scenes</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Connect</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Farah. All rights reserved.</p>
-        </div>
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Your Name — Playful craft, serious results.</p>
+      </div>
     </footer>
 
-    <script src="portfolio-script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html> 
