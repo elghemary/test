@@ -120,14 +120,10 @@ img { max-width: 100%; display: block; }
   position: static;
   transform: none;
   margin: 0 0 16px;
-  text-align: center;
+  text-align: left;
 }
 .hero-name .name {
-  display: inline-block;
-  background: #000000a6;
-  color: var(--accent);
-  padding: 8px 16px;
-  border-radius: 8px;
+  
   font-weight: 900;
   letter-spacing: 0.16em;
   text-transform: uppercase;
