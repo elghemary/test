@@ -317,7 +317,7 @@ img { max-width: 100%; display: block; }
 /* Responsive */
 /* <= 1200px: tighten layout, use even columns */
 @media (max-width: 1200px) {
-  .hero-inner { grid-template-columns: 1fr 1fr; gap: 28px; }
+  .hero-inner { grid-template-columns: 1fr; }
 }
 
 /* <= 992px (tablets): still two columns if possible */
