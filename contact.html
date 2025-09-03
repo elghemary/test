@@ -3,103 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Farah's Portfolio</title>
-    <link rel="stylesheet" href="portfolio-styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Contact | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="cursor"></div>
-    <div class="cursor-follower"></div>
-
-    <header>
-        <nav>
-            <div class="logo">Farah</div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="what-i-do.html">What I Do</a></li>
-                <li><a href="showcase.html">Showcase</a></li>
-                <li><a href="behind-scenes.html">Behind the Scenes</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
+    <header class="site-header">
+      <div class="container header-content">
+        <a href="index.html" class="logo" aria-label="Home">
+          <span class="logo-mark">●</span>
+          <span class="logo-text">Creator</span>
+        </a>
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="what-i-do.html">What I Do</a>
+          <a href="showcase.html">Showcase</a>
+          <a href="behind-scenes.html">Behind the Scenes</a>
+          <a href="contact.html" class="active">Say Hello</a>
         </nav>
+      </div>
     </header>
 
     <main>
-        <section class="contact-section">
-            <h1>Get in Touch</h1>
-            <p>Let's create something amazing together!</p>
-            
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h2>Contact Information</h2>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <p>email@example.com</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <p>+1 234 567 890</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Your Location</p>
-                    </div>
-                </div>
-                
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>  
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+      <section class="section contact reveal-on-scroll" aria-label="Say Hello">
+        <div class="container">
+          <h1 class="section-title">Get in Touch</h1>
+          <div class="contact-inner">
+            <div class="contact-copy">
+              <p>Let's create something amazing together!</p>
+              <ul class="contact-list">
+                <li><a href="mailto:email@example.com"><i class="fas fa-envelope"></i> email@example.com</a></li>
+                <li><a href="tel:+1234567890"><i class="fas fa-phone"></i> +1 234 567 890</a></li>
+                <li><a href="#"><i class="fas fa-map-marker-alt"></i> Your Location</a></li>
+              </ul>
             </div>
-        </section>
+            <form class="contact-form">
+              <label class="full">Name
+                <input type="text" id="name" name="name" required>
+              </label>
+              <label class="full">Email
+                <input type="email" id="email" name="email" required>
+              </label>
+              <label class="full">Message
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </label>
+              <button type="submit" class="btn btn-accent">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Farah</h3>
-                <p>Educator • STEAM Advocate • Impact Creator</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="what-i-do.html">What I Do</a></li>
-                    <li><a href="showcase.html">Showcase</a></li>
-                    <li><a href="behind-scenes.html">Behind the Scenes</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Connect</h3>
-                <div class="social-links">
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Farah. All rights reserved.</p>
-        </div>
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Your Name — Playful craft, serious results.</p>
+      </div>
     </footer>
 
-    <script src="portfolio-script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html> 
