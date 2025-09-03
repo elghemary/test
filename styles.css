@@ -69,7 +69,15 @@ img { max-width: 100%; display: block; }
   font-weight: 700;
 }
 .logo-mark { color: var(--accent); }
-.logo-text { letter-spacing: 0.06em; }
+.logo-text { 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;         /* ExtraBold */
+  font-size: 96px;          /* make it huge */
+  line-height: 1;           /* tight spacing */
+  color: #fdd835;           /* similar yellow */
+  text-transform: uppercase;/* all caps */
+  margin: 0;
+}
 
 .site-nav {
   display: flex;
