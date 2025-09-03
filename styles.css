@@ -118,9 +118,11 @@ img { max-width: 100%; display: block; }
 }
 .hero-name {
   position: absolute;
-  top: 12px;
-  left: 12px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   margin: 0;
+  text-align: center;
 }
 .hero-name .name {
   display: inline-block;
@@ -130,6 +132,7 @@ img { max-width: 100%; display: block; }
   border-radius: 8px;
   font-weight: 900;
   letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 .hero-tagline { color: var(--muted); margin: 6px 0 16px; }
 .hero-cta { display: flex; gap: 12px; }
@@ -314,7 +317,19 @@ img { max-width: 100%; display: block; }
 .reveal-on-scroll.revealed { opacity: 1; transform: translateY(0); }
 
 /* Responsive */
-@media (max-width: 900px) {
+/* <= 1200px: tighten layout, use even columns */
+@media (max-width: 1200px) {
+  .hero-inner { grid-template-columns: 1fr 1fr; gap: 28px; }
+}
+
+/* <= 992px (tablets): still two columns if possible */
+@media (max-width: 992px) {
+  .hero-inner { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .container { width: min(1000px, 94%); }
+}
+
+/* <= 768px (small tablets): stack vertically */
+@media (max-width: 768px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-right { text-align: center; }
   .hero-cta { justify-content: center; }
@@ -322,11 +337,17 @@ img { max-width: 100%; display: block; }
   .traits { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .project-grid, .behind-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
   .contact .contact-inner { grid-template-columns: 1fr; }
-}
-@media (max-width: 640px) {
+
+  /* Mobile nav at this breakpoint */
   .site-nav { display: none; position: absolute; right: 4%; top: 64px; background: #1b1b1b; border: 1px solid var(--border); border-radius: 12px; padding: 8px; flex-direction: column; gap: 4px; }
   .site-nav.open { display: flex; }
   .nav-toggle { display: inline-block; }
-  .project-grid, .behind-grid { grid-template-columns: 1fr; }
+}
+
+/* <= 480px (phones): specific stacking order and sizing */
+@media (max-width: 480px) {
+  /* Name above image in visual flow */
+  .hero-name { position: static; transform: none; margin: 0 0 10px; text-align: center; }
   .hero-photo { max-width: 100%; border-width: 4px; }
+  .project-grid, .behind-grid { grid-template-columns: 1fr; }
 }
