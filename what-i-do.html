@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | What I Do</title>
+    <link rel="stylesheet" href="portfolio-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #330000;
+            --secondary: #73605B;
+            --accent: #D09683;
+            --light: #F1F1F1;
+        }
+        
+        .page-header {
+            background-color: var(--light);
+            padding: 120px 5% 60px;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+        }
+        
+        .quote-container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+        
+        .quote-container::before {
+            content: '"';
+            font-size: 5rem;
+            color: var(--accent);
+            opacity: 0.3;
+            position: absolute;
+            top: -20px;
+            left: 20px;
+        }
+        
+        .quote-text {
+            font-size: 1.5rem;
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .quote-author {
+            text-align: right;
+            font-weight: 600;
+            color: var(--secondary);
+        }
+        
+        .section-container {
+            padding: 80px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .section {
+            margin-bottom: 100px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-header {
+            padding: 40px;
+            color: white;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+        
+        .section-header p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            line-height: 1.6;
+        }
+        
+        .section-content {
+            padding: 40px;
+            background-color: white;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .project-card {
+            background-color: var(--light);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .project-card:hover .project-image img {
+            transform: scale(1.1);
+        }
+        
+        .project-info {
+            padding: 20px;
+        }
+        
+        .project-info h3 {
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+        
+        .project-info p {
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+        
+        .project-link {
+            display: inline-flex;
+            align-items: center;
+            color: var(--accent);
+            font-weight: 600;
+            transition: transform 0.3s ease;
+        }
+        
+        .project-link:hover {
+            transform: translateX(5px);
+        }
+        
+        .project-link i {
+            margin-left: 5px;
+        }
+        
+        /* Section-specific styles */
+        .build-teach {
+            background-color: var(--primary);
+        }
+        
+        .create-play {
+            background-color: var(--secondary);
+        }
+        
+        .give-back {
+            background-color: var(--accent);
+        }
+        
+        .section-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .quote-text {
+                font-size: 1.2rem;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+            
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">Portfolio<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="what-i-do.html" class="active">What I Do</a></li>
+                <li><a href="behind-scenes.html">Behind the Scenes</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>What I Do</h1>
+        <p>Exploring the intersection of education, technology, and creativity</p>
+        
+        <div class="quote-container">
+            <p class="quote-text">"Technology is not neutral. We're inside of what we make, and it's inside of us."</p>
+            <p class="quote-author">— Donna Haraway (Cyborg Manifesto)</p>
+        </div>
+    </div>
+
+    <!-- Build & Teach Section -->
+    <div class="section-container">
+        <div class="section">
+            <div class="section-header build-teach">
+                <div class="section-icon"><i class="fas fa-robot"></i></div>
+                <h2>Build & Teach</h2>
+                <p>I believe in hands-on learning that sparks curiosity and creativity. Through robotics, coding, and creative computer science, I help students discover the magic of building things that move, think, and solve real problems.</p>
+            </div>
+            <div class="section-content">
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/robotics-workshop.jpg" alt="Robotics Workshop">
+                        </div>
+                        <div class="project-info">
+                            <h3>Robotics Workshop</h3>
+                            <p>Interactive workshops where students build and program robots to solve challenges, developing critical thinking and problem-solving skills.</p>
+                            <a href="#" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/coding-class.jpg" alt="Creative Coding Class">
+                        </div>
+                        <div class="project-info">
+                            <h3>Creative Coding Class</h3>
+                            <p>Teaching coding through creative projects, helping students see programming as a tool for self-expression and problem-solving.</p>
+                            <a href="#" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/steam-curriculum.jpg" alt="STEAM Curriculum">
+                        </div>
+                        <div class="project-info">
+                            <h3>STEAM Curriculum</h3>
+                            <p>Developing integrated curriculum that connects science, technology, engineering, arts, and mathematics through hands-on projects.</p>
+                            <a href="#" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Create & Play Section -->
+        <div class="section">
+            <div class="section-header create-play">
+                <div class="section-icon"><i class="fas fa-palette"></i></div>
+                <h2>Create & Play</h2>
+                <p>I love exploring the intersection of technology and art. Through creative projects, I experiment with new ways to blend digital and physical mediums, creating experiences that are both playful and thought-provoking.</p>
+            </div>
+            <div class="section-content">
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/interactive-art.jpg" alt="Interactive Art Installation">
+                        </div>
+                        <div class="project-info">
+                            <h3>Interactive Art Installation</h3>
+                            <p>Creating immersive experiences that respond to movement and touch, exploring the relationship between human interaction and digital art.</p>
+                            <a href="#" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/digital-storytelling.jpg" alt="Digital Storytelling">
+                        </div>
+                        <div class="project-info">
+                            <h3>Digital Storytelling</h3>
+                            <p>Combining narrative techniques with digital tools to create engaging stories that can be experienced in multiple ways.</p>
+                            <a href="#" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/creative-tech.jpg" alt="Creative Technology">
+                        </div>
+                        <div class="project-info">
+                            <h3>Creative Technology</h3>
+                            <p>Experimenting with emerging technologies to create new forms of expression and interaction.</p>
+                            <a href="#" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Give Back & Grow Section -->
+        <div class="section">
+            <div class="section-header give-back">
+                <div class="section-icon"><i class="fas fa-heart"></i></div>
+                <h2>Give Back & Grow</h2>
+                <p>Education should be accessible to everyone. I'm committed to creating opportunities for underserved communities through volunteering, mentorship, and developing resources that make learning more accessible.</p>
+            </div>
+            <div class="section-content">
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/community-workshop.jpg" alt="Community Workshop">
+                        </div>
+                        <div class="project-info">
+                            <h3>Community Workshop</h3>
+                            <p>Organizing free workshops in underserved communities to introduce STEAM concepts and skills to students who might not otherwise have access.</p>
+                            <a href="#" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/mentorship-program.jpg" alt="Mentorship Program">
+                        </div>
+                        <div class="project-info">
+                            <h3>Mentorship Program</h3>
+                            <p>Connecting with students one-on-one to provide guidance, encouragement, and support as they explore their interests in technology and education.</p>
+                            <a href="#" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/projects/educational-resources.jpg" alt="Educational Resources">
+                        </div>
+                        <div class="project-info">
+                            <h3>Educational Resources</h3>
+                            <p>Creating and sharing open-source educational materials that make STEAM learning more accessible and engaging for all students.</p>
+                            <a href="#" class="project-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">Portfolio<span>.</span></div>
+            <p>Creating meaningful experiences through design and technology.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="what-i-do.html">What I Do</a>
+                <a href="behind-scenes.html">Behind the Scenes</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <p class="copyright">&copy; 2023 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="portfolio-script.js"></script>
+    <script src="cursor-script.js"></script>
+</body>
+</html> 

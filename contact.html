@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Farah's Portfolio</title>
+    <link rel="stylesheet" href="portfolio-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <header>
+        <nav>
+            <div class="logo">Farah</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="what-i-do.html">What I Do</a></li>
+                <li><a href="behind-scenes.html">Behind the Scenes</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Get in Touch</h1>
+            <p>Let's create something amazing together!</p>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>email@example.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+1 234 567 890</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Your Location</p>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>  
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Farah</h3>
+                <p>Educator • STEAM Advocate • Impact Creator</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="what-i-do.html">What I Do</a></li>
+                    <li><a href="behind-scenes.html">Behind the Scenes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Farah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="portfolio-script.js"></script>
+</body>
+</html> 
