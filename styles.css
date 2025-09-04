@@ -110,7 +110,7 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-right {
-  position: absolute;
+  position: relative;
   /*flex: unset;                   take remaining space */
   /*display: flex;*/
   flex-direction: column;   /* stack title and image vertically */
