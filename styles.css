@@ -95,6 +95,9 @@ img { max-width: 100%; display: block; }
 
 /* Hero */
 .hero {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
   background: var(--bg-hero);
   padding: 60px 0; /* less padding so portrait looks cleaner */
 }
@@ -129,7 +132,7 @@ img { max-width: 100%; display: block; }
   margin-left: 120px;
 }
 
-.hero-name .name {
+.hero-name {
   top: 20px;              /* distance from the top of the photo */
   left: 20px;  
   font-family: 'Montserrat', sans-serif;
