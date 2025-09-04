@@ -133,6 +133,7 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-name {
+  position: absolute;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   font-size: 72px;          /* still bold and big, but scaled for portrait */
