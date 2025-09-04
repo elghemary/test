@@ -95,7 +95,7 @@ img { max-width: 100%; display: block; }
 
 /* Hero */
 .hero {
-  display: flex;
+  /*display: flex;*/
   gap: 20px;
   align-items: flex-start;
   background: var(--bg-hero);
