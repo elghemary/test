@@ -119,7 +119,6 @@ img { max-width: 100%; display: block; }
   position: relative;
   width: 100%;
   max-width: 480px;      /* portrait style */
-  margin: 0 auto;
 }
 
 .hero-photo {
@@ -143,7 +142,7 @@ img { max-width: 100%; display: block; }
   text-transform: uppercase;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* contrast on top of photo */
   margin-left: 150px; 
-  margin-top: 40px;
+  top: 40px;
 }
 
 /* Roles ticker */
