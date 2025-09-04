@@ -94,7 +94,6 @@ img { max-width: 100%; display: block; }
 }
 
 /* Hero */
-/* Hero */
 .hero {
   background: var(--bg-hero);
   padding: 60px 0; /* less padding so portrait looks cleaner */
@@ -113,7 +112,7 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-photo {
-  width: 100%;
+  width: 50%;
   aspect-ratio: 3 / 4;   /* portrait ratio */
   object-fit: cover;
   border-radius: 16px;
