@@ -330,33 +330,3 @@ img { max-width: 100%; display: block; }
 /* Reveal on scroll */
 .reveal-on-scroll { opacity: 0; transform: translateY(20px); transition: opacity .6s cubic-bezier(.22,1,.36,1), transform .6s cubic-bezier(.22,1,.36,1); }
 .reveal-on-scroll.revealed { opacity: 1; transform: translateY(0); }
-
-/* Responsive */
-/* <= 1200px: tighten layout, use even columns */
-@media (max-width: 1200px) {
-  .hero-inner { grid-template-columns: 1fr; }
-}
-
-/* <= 992px (tablets): still two columns if possible */
-@media (max-width: 992px) {
-  .hero-inner { grid-template-columns: 1fr 1fr; gap: 24px; }
-  .container { width: min(1000px, 94%); }
-}
-
-/* <= 768px (small tablets): stack vertically */
-@media (max-width: 768px) {
-  .hero-inner { grid-template-columns: 1fr; }
-
-  /* Mobile nav at this breakpoint */
-  .site-nav { display: none; position: absolute; right: 4%; top: 64px; background: #1b1b1b; border: 1px solid var(--border); border-radius: 12px; padding: 8px; flex-direction: column; gap: 4px; }
-  .site-nav.open { display: flex; }
-  .nav-toggle { display: inline-block; }
-}
-
-/* <= 480px (phones): specific stacking order and sizing */
-@media (max-width: 480px) {
-  /* Name above image in visual flow */
-  .hero-name { position: static; transform: none; margin: 0 0 10px; text-align: center; }
-  .hero-photo { max-width: 100%; border-width: 4px; }
-  .project-grid, .behind-grid { grid-template-columns: 1fr; }
-}
