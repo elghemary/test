@@ -43,7 +43,6 @@ img { max-width: 100%; display: block; }
 }
 .section-kicker {
   color: var(--accent);
-  text-transform: uppercase;
   letter-spacing: 0.08em;
   margin: 0 0 8px 0;
 }
