@@ -104,9 +104,10 @@ img { max-width: 100%; display: block; }
 
 
 .hero-left {
-  /*display: flex;*/
+  display: flex;
   flex-direction: column;   /* stack title and image vertically */
-  /*align-items: flex-start;   keep items left-aligned */
+  justify-content: flex-end;
+  align-items: flex-end;       /* vertically center paragraph next to image */
   background-color: #e9e0e0;
 }
 
@@ -125,7 +126,6 @@ img { max-width: 100%; display: block; }
   position: relative;
   width: 100%;
   max-width: 480px;      /* portrait style */
-  background-color: #2457b7;
 }
 
 .hero-photo {
@@ -136,7 +136,7 @@ img { max-width: 100%; display: block; }
   border: 4px solid #2a2a2a;
   box-shadow: var(--shadow);
   margin-top: 20px;
-  margin-left: 350px;
+  /*margin-left: 350px;*/
 }
 
 .hero-name {
