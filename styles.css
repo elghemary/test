@@ -344,9 +344,8 @@ img { max-width: 100%; display: block; }
 }
 
 /* <= 768px (small tablets): stack vertically */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .hero-inner { grid-template-columns: 1fr; }
-}
 
   /* Mobile nav at this breakpoint */
   .site-nav { display: none; position: absolute; right: 4%; top: 64px; background: #1b1b1b; border: 1px solid var(--border); border-radius: 12px; padding: 8px; flex-direction: column; gap: 4px; }
