@@ -109,7 +109,7 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-right {
-  flex: 1;                  /* take remaining space */
+  flex: unset;                  /* take remaining space */
   display: flex;
   align-items: center;      /* vertically center paragraph next to image */
   padding-left: 20px;
