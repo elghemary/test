@@ -97,7 +97,7 @@ img { max-width: 100%; display: block; }
 .hero {
   display: flex;
   gap: 20px;
-  align-items: flex-start;
+  align-items: center;
   background: var(--bg-hero);
   padding: 60px 0; /* less padding so portrait looks cleaner */s
 }
@@ -121,7 +121,6 @@ img { max-width: 100%; display: block; }
   font-size: 20px;          /* still bold and big, but scaled for portrait */
   line-height: 1;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* contrast on top of photo */
-  top: 80px;
 
 }
 
