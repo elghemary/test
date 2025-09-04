@@ -116,7 +116,7 @@ img { max-width: 100%; display: block; }
   flex-direction: column;   /* stack title and image vertically */
   /*align-items: flex-start;*/
   /*align-items: left;       vertically center paragraph next to image */
-  padding-left: 20px;
+  /*padding-left: 20px;*/
 }
 
 .hero-photo-wrap {
