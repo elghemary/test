@@ -103,14 +103,14 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-left {
-  display: flex;
+  /*display: flex;*/
   flex-direction: column;   /* stack title and image vertically */
   align-items: flex-start;  /* keep items left-aligned */
 }
 
 .hero-right {
   /*flex: unset;                   take remaining space */
-  display: flex;
+  /*display: flex;$/
   flex-direction: column;   /* stack title and image vertically */
   align-items: flex-start;
   /*align-items: left;       vertically center paragraph next to image */
