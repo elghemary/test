@@ -100,9 +100,6 @@ img { max-width: 100%; display: block; }
   align-items: flex-start;
   background: var(--bg-hero);
   padding: 60px 0; /* less padding so portrait looks cleaner */
-  justify-content: center; /* center content horizontally */
-  max-width: 1100px;
-  margin: 0 auto;
 }
 
 .hero-left {
@@ -114,7 +111,7 @@ img { max-width: 100%; display: block; }
 .hero-right {
   flex: unset;                  /* take remaining space */
   display: flex;
-  align-items: center;      /* vertically center paragraph next to image */
+  align-items: left;      /* vertically center paragraph next to image */
   padding-left: 20px;
 }
 
