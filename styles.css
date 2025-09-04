@@ -116,6 +116,14 @@ img { max-width: 100%; display: block; }
   margin-top: 100px;
   position: relative;
   flex-direction: column;   /* stack title and image vertically */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 60px;          /* still bold and big, but scaled for portrait */
+  line-height: 1;
+  color: #fdd835;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* contrast on top of photo */
+  top: 80px;
+
 }
 
 .hero-photo-wrap {
@@ -143,7 +151,7 @@ img { max-width: 100%; display: block; }
   text-transform: uppercase;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* contrast on top of photo */
   top: 40px;
-  margin-right: 30px;
+  margin-right: 50px;
 }
 
 .roles-ticker {
