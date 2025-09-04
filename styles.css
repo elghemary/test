@@ -109,6 +109,8 @@ img { max-width: 100%; display: block; }
   justify-content: flex-end;
   align-items: flex-end;       /* vertically center paragraph next to image */
   background-color: #e9e0e0;
+  max-width: 400px;      /* Limit the width of the left side */
+  flex: 0 0 400px;  
 }
 
 .hero-right {
