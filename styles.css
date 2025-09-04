@@ -23,14 +23,11 @@ body {
   color: var(--text);
   background: var(--bg-page);
   line-height: 1.6;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
 }
 img { max-width: 100%; display: block; }
 
-
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
-}
 
 .container {
   width: min(1100px, 92%);
