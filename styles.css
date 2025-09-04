@@ -112,7 +112,7 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-photo {
-  width: 50%;
+  width: 30%;
   aspect-ratio: 3 / 4;   /* portrait ratio */
   object-fit: cover;
   border-radius: 16px;
