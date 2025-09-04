@@ -99,7 +99,7 @@ img { max-width: 100%; display: block; }
   gap: 20px;
   align-items: flex-start;
   background: var(--bg-hero);
-  padding: 60px 0; /* less padding so portrait looks cleaner */
+  padding: 60px 0; /* less padding so portrait looks cleaner */s
 }
 
 
@@ -114,14 +114,9 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-right {
+  vertical-align: middle;
   position: relative;
-  /*flex: unset;                   take remaining space */
-  /*display: flex;*/
   flex-direction: column;   /* stack title and image vertically */
-  /*align-items: flex-start;*/
-  /*align-items: left;       vertically center paragraph next to image */
-  /*padding-right: 100px;*/
-  background-color: #cc0000;
 }
 
 .hero-photo-wrap {
@@ -131,30 +126,27 @@ img { max-width: 100%; display: block; }
 }
 
 .hero-photo {
-  width: 60%;
-  aspect-ratio: 3 / 4;   /* portrait aspect ratio */
+  width: 40%;
   object-fit: cover;
   border-radius: 16px;
   border: 4px solid #2a2a2a;
   box-shadow: var(--shadow);
   margin-top: 20px;
-  /*margin-left: 350px;*/
 }
 
 .hero-name {
   position: absolute;
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
-  font-size: 96px;          /* still bold and big, but scaled for portrait */
+  font-size: 72px;          /* still bold and big, but scaled for portrait */
   line-height: 1;
   color: #fdd835;
   text-transform: uppercase;
   text-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* contrast on top of photo */
-  margin-left: 150px; 
+  margin-left: 130px; 
   top: 60px;
 }
 
-/* Roles ticker */
 .roles-ticker {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
