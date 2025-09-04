@@ -108,6 +108,7 @@ img { max-width: 100%; display: block; }
   width: 100%;
   max-width: 480px;      /* portrait style */
   margin: 0 auto;
+  left: 100px;
 }
 
 .hero-photo {
