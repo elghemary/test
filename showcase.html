@@ -1,227 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Farah El Ghemary — Documentation Site</title>
-  <!-- Optional: Uncomment to use Montserrat -->
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet"> -->
-  <style>
-    :root{
-      --bg: #0f0f10;
-      --fg: #eaeaea;
-      --muted: #b7b7b7;
-      --accent: #fdd835; /* soft yellow */
-      --card: #171717;
-      --border: #2a2a2a;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;height:100%;scroll-behavior:smooth}
-    body{
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
-      background: var(--bg);
-      color: var(--fg);
-      line-height:1.6;
-    }
-    a{color:inherit}
-    .container{width:min(1100px, 92%); margin-inline:auto}
-
-    /* --- Header / Hero --- */
-    header{
-      position:relative; isolation:isolate;
-      padding: 80px 0 48px;
-    }
-    .hero{
-      display:grid; gap:28px; align-items:center;
-      grid-template-columns: 160px 1fr;
-    }
-    .hero img{
-      width:160px; height:160px; object-fit:cover; border-radius:24px; border:1px solid var(--border);
-    }
-    .name{font-size:clamp(28px, 4vw, 48px); font-weight:800; letter-spacing:0.3px}
-    .motto{font-size:clamp(16px, 2.2vw, 22px); color:var(--accent); font-weight:700}
-    .intro{color:var(--muted); margin-top:8px}
-
-    /* --- Section titles --- */
-    .section-title{font-size:clamp(20px, 2.6vw, 28px); margin: 40px 0 18px; font-weight:800}
-    .section-sub{color:var(--muted); margin-top:-8px}
-
-    /* --- Timeline --- */
-    .timeline{
-      position:relative;
-      margin: 24px 0 90px;
-    }
-    /* vertical line */
-    .timeline::before{
-      content:""; position:absolute; left:18px; top:0; bottom:0; width:2px; background:linear-gradient(180deg, #333, #222);
-    }
-    .entry{
-      position:relative; display:grid; grid-template-columns: 40px 1fr; gap:16px;
-      padding:18px 0; border-bottom:1px dashed var(--border);
-    }
-    .entry:last-child{border-bottom:none}
-    .dot{
-      position:relative; width:16px; height:16px; border-radius:50%; background:var(--accent); margin-top:6px; border:2px solid #191919; box-shadow:0 0 0 3px rgba(253,216,53,.12);
-    }
-    .entry time{
-      position:absolute; left:42px; top:-2px; font-size:12px; color:#8f8f8f;
-    }
-    .card{
-      background:var(--card); border:1px solid var(--border); border-radius:14px; padding:16px 16px; box-shadow: 0 6px 18px rgba(0,0,0,.25);
-    }
-    .card h4{margin:0 0 6px; font-size:16px}
-    .card p{margin:0; color:#cfcfcf}
-    .tag{
-      display:inline-block; font-size:12px; padding:2px 8px; border:1px solid var(--border); border-radius:999px; margin-right:6px; color:#bfbfbf
-    }
-
-    /* --- Utilities --- */
-    nav{
-      position:sticky; top:0; z-index:10; background:rgba(15,15,16,.7); backdrop-filter:saturate(140%) blur(6px); border-bottom:1px solid #191919;
-    }
-    nav .inner{display:flex; gap:16px; align-items:center; padding:10px 0}
-    nav a{padding:8px 10px; text-decoration:none; border:1px solid transparent; border-radius:10px}
-    nav a:hover{border-color:var(--border)}
-
-    /* --- Responsive --- */
-    @media (max-width:720px){
-      .hero{grid-template-columns: 1fr; text-align:center}
-      .hero img{justify-self:center}
-      .timeline::before{left:calc(50% - 1px)}
-      .entry{grid-template-columns: 1fr; text-align:left}
-      .dot{margin-left:calc(50% - 8px)}
-      .entry time{left:auto; right:auto; position:static; display:block; margin:6px 0 0 0; text-align:center}
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Showcase | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav>
-    <div class="container inner">
-      <a href="#top">Home</a>
-      <a href="#timeline">Timeline</a>
-      <a href="#showcase">Showcase</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <header id="top" class="container">
-    <div class="hero">
-      <!-- Replace src with your own image -->
-      <img src="https://via.placeholder.com/320x320.png?text=Farah" alt="Farah El Ghemary portrait" />
-      <div>
-        <div class="name">Farah El Ghemary</div>
-        <div class="motto">Jack of all trades — learning in public.</div>
-        <p class="intro">
-          I’m Farah — a curious builder and educator who documents the messy middle: the wins, the detours, and the half-finished experiments. This site is my living notebook. I try things out loud, connect dots across tech, education, and community, and keep moving forward — one small experiment at a time.
-        </p>
-      </div>
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo" aria-label="Home">
+        <span class="logo-mark">●</span>
+        <span class="logo-text">Creator</span>
+      </a>
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="what-i-do.html">What I Do</a>
+        <a href="showcase.html" class="active">Showcase</a>
+        <a href="behind-scenes.html">Behind the Scenes</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
   </header>
 
-  <main class="container">
-    <section aria-labelledby="trying-title">
-      <h2 id="trying-title" class="section-title">Trying Things Out Loud</h2>
-      <p class="section-sub">Documenting the process — not just the results.</p>
-      <p>
-        I learn by doing, and sometimes by doing it wrong first. Here you’ll find attempts, retries, and notes to my future self. It’s less of a showroom and more of a workshop: projects that worked, ideas that changed, and lessons I don’t want to forget.
-      </p>
-    </section>
+  <main>
+    <section class="section projects" aria-label="Showcase">
+      <div class="container">
+        <h1 class="section-title">Showcase</h1>
+        <div class="filters" role="tablist" aria-label="Project categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="robotics" role="tab">Robotics</button>
+          <button class="filter-btn" data-filter="arduino" role="tab">Arduino</button>
+          <button class="filter-btn" data-filter="teaching" role="tab">Teaching Materials</button>
+          <button class="filter-btn" data-filter="personal" role="tab">Personal</button>
+        </div>
 
-    <section id="timeline" aria-labelledby="timeline-title">
-      <h2 id="timeline-title" class="section-title">What I Do — as a Timeline</h2>
-      <p class="section-sub">A simple, scrollable record from 2020 to today. Add, remove, or reorder entries as you like.</p>
-
-      <div class="timeline">
-        <!-- ENTRY TEMPLATE
-        <article class="entry">
-          <div class="dot" aria-hidden="true"></div>
-          <time datetime="YYYY-MM">MMM YYYY</time>
-          <div class="card">
-            <h4>Title</h4>
-            <p>One–two sentence description of what happened and what you learned.</p>
-            <div class="tags">
-              <span class="tag">tag</span>
-              <span class="tag">tag</span>
+        <div class="project-grid">
+          <article class="project-card" data-category="robotics">
+            <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="Robotics project" />
+            <div class="project-overlay">
+              <h3>Line‑Following Bot</h3>
+              <p>PID‑tuned robot for education kits.</p>
             </div>
-          </div>
-        </article>
-        -->
-
-        <!-- Sample entries you can edit -->
-        <article class="entry">
-          <div class="dot" aria-hidden="true"></div>
-          <time datetime="2020-01">2020</time>
-          <div class="card">
-            <h4>Started documenting my journey</h4>
-            <p>Decided to turn my website into a living notebook: not just highlights, but what I try, what breaks, and what I fix.</p>
-            <div class="tags"><span class="tag">start</span><span class="tag">documentation</span></div>
-          </div>
-        </article>
-
-        <article class="entry">
-          <div class="dot" aria-hidden="true"></div>
-          <time datetime="2021-09">Sep 2021</time>
-          <div class="card">
-            <h4>Teaching & Robotics</h4>
-            <p>Leaned into hands-on learning with students — building, testing, and reflecting together.</p>
-            <div class="tags"><span class="tag">education</span><span class="tag">robotics</span></div>
-          </div>
-        </article>
-
-        <article class="entry">
-          <div class="dot" aria-hidden="true"></div>
-          <time datetime="2023-06">Jun 2023</time>
-          <div class="card">
-            <h4>Global Shapers & Community</h4>
-            <p>Helped convene conversations around impact and learning — connecting people and ideas.</p>
-            <div class="tags"><span class="tag">community</span><span class="tag">impact</span></div>
-          </div>
-        </article>
-
-        <article class="entry">
-          <div class="dot" aria-hidden="true"></div>
-          <time datetime="2024-11">Nov 2024</time>
-          <div class="card">
-            <h4>Arduino & Classroom Projects</h4>
-            <p>Built small electronics projects with students and documented the process step by step.</p>
-            <div class="tags"><span class="tag">arduino</span><span class="tag">making</span></div>
-          </div>
-        </article>
-
-        <article class="entry">
-          <div class="dot" aria-hidden="true"></div>
-          <time datetime="2025-02">Feb 2025</time>
-          <div class="card">
-            <h4>JobXplore — Prototypes & Workshops</h4>
-            <p>Explored ways to bridge studies and real jobs by bringing professionals into the classroom.</p>
-            <div class="tags"><span class="tag">jobxplore</span><span class="tag">workshops</span></div>
-          </div>
-        </article>
-
-        <article class="entry">
-          <div class="dot" aria-hidden="true"></div>
-          <time datetime="2025-09">Sep 2025</time>
-          <div class="card">
-            <h4>Learning in Public — Still</h4>
-            <p>Ongoing experiments across tech, education, and movement — from code to classroom to trail.</p>
-            <div class="tags"><span class="tag">ongoing</span><span class="tag">learning</span></div>
-          </div>
-        </article>
+          </article>
+          <article class="project-card" data-category="arduino">
+            <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop" alt="Arduino project" />
+            <div class="project-overlay">
+              <h3>Weather Cube</h3>
+              <p>Ambient LED display via Arduino + MQTT.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="teaching">
+            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?q=80&w=1200&auto=format&fit=crop" alt="Teaching materials" />
+            <div class="project-overlay">
+              <h3>Lesson Kit</h3>
+              <p>Printable modules for intro electronics.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="personal">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Personal project" />
+            <div class="project-overlay">
+              <h3>Micro‑Stories</h3>
+              <p>Short fiction illustrated by code.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="robotics">
+            <img src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?q=80&w=1200&auto=format&fit=crop" alt="Robotics build" />
+            <div class="project-overlay">
+              <h3>Armature</h3>
+              <p>Low‑cost robotic arm prototype.</p>
+            </div>
+          </article>
+          <article class="project-card" data-category="arduino">
+            <img src="https://images.unsplash.com/photo-1451187041486-7c88f046331f?q=80&w=1200&auto=format&fit=crop" alt="Arduino build" />
+            <div class="project-overlay">
+              <h3>Plant Buddy</h3>
+              <p>Soil moisture sensor with playful alerts.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
-
-    <section id="showcase" aria-labelledby="showcase-title">
-      <h2 id="showcase-title" class="section-title">Showcase</h2>
-      <p class="section-sub">Selected projects with short stories behind them.</p>
-      <!-- Add your project cards here later -->
-    </section>
-
-    <section id="contact" aria-labelledby="contact-title" style="margin-bottom:120px">
-      <h2 id="contact-title" class="section-title">Contact</h2>
-      <p class="section-sub">Want to collaborate, swap ideas, or just say hi?</p>
-      <p>Email: <a href="mailto:hello@farah.example">hello@farah.example</a> · LinkedIn: <a href="#">/in/farah</a></p>
-    </section>
   </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> EL GHEMARY Farah • Inspiring the next generation through STEAM.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
