@@ -80,6 +80,16 @@ img { max-width: 100%; display: block; }
 }
 /* TIMLINE*/ 
 
+.entry time {
+  display: block;       /* make it its own line */
+  margin-bottom: 8px;   /* add space before card */
+  font-weight: 600;
+}
+
+.card h4 {
+  margin-top: 0;   /* remove that unwanted top margin */
+}
+
 
 .container {
   width: min(1100px, 92%);
