@@ -373,3 +373,8 @@ img { max-width: 100%; display: block; }
   position: relative;
   margin-bottom: 40px;
 }
+
+/* Reduce space above h4 inside cards */
+.card h4 {
+  margin-top: 0
+}
